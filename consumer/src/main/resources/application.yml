@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: pace2car-dubbo-consumer
+server:
+  port: 8091
+
+dubbo:
+  application:
+    id: pace2car-dubbo-consumer-id1
+    name: pace2car-dubbo-consumer-name1
+  registry:
+    protocol: zookeeper
+    address: 127.0.0.1:2181
+    id: pace2car-registry-1

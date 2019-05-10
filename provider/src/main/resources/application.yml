@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: pace2car-dubbo-provider
+server:
+  port: 8090
+
+dubbo:
+  registry:
+    protocol: zookeeper
+    address: 127.0.0.1:2181
+    id: 1
+  protocol:
+    port: 12345
+    name: dubbo
+    id: dubbo
+    status: server
+  application:
+    id: pace2car-dubbo-provider-id1
+    name: pace2car-dubbo-provider-name1
+    qos-enable: true
+    qos-port: 22222
+  scan:
+    basePackages: com.pace2car.dubbodemo.provider.service.impl
